@@ -1,0 +1,3 @@
+# opendap_llmtool
+OPeNDAP, that is used across oceonography, climate science, nasa, serves multi-dimansional scientific arrays through the tools Hyrax, PyDAP, THREDDS
+OPeNDAP (used across oceanography, climate science, and remote sensing) serves multi-dimensional scientific arrays through DAP2/DAP4 endpoints (THREDDS, Hyrax, PyDAP). There's no existing tool that turns that protocol into something an LLM agent — like Claude Code — can read directly. Metadata comes back as terse C-like schema notation or XML; data comes back as binary or oversized arrays that blow past what's useful to hand an LLM.

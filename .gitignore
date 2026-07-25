@@ -1,0 +1,15 @@
+# Build output
+build/
+a.out
+*.out
+*.o
+*.obj
+
+# Compiled binaries (no extension)
+HelloWorld
+
+# Editor settings
+.vscode/
+
+# macOS
+.DS_Store
