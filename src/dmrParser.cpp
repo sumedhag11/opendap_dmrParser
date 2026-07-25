@@ -34,6 +34,20 @@ std::string getValueFromNode(pugi::xml_node node)
 }
 //./opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr    
 //./opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr
+/* parse variables and their attributes from the dmr document
+<Float64 name="COADSX">
+        <Dim name="/COADSX"/>
+        <Attribute name="units" type="String">
+            <Value>degrees_east</Value>
+        </Attribute>
+        <Attribute name="modulo" type="String">
+            <Value> </Value>
+        </Attribute>
+        <Attribute name="point_spacing" type="String">
+            <Value>even</Value>
+        </Attribute>
+    </Float64>
+ */
 std::vector<Variable> parseVariables(pugi::xml_node root)
 {
     std::vector<Variable> vars;

@@ -1,4 +1,3 @@
-
 #include "HttpClient.h"
 #include "describeCmd.h"
 
@@ -6,6 +5,7 @@
 Get DMR parsed data, dimensions, attributes and values using following
 For DMR documents - 
 ./opendap-llmtool describe URL
+e
 ./opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr
 ./opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr
 */
@@ -47,12 +47,19 @@ int main (int argc, char* argv[])
         }
         else
         {
-            std::cout<< "Invalid command passed" ;
+            std::cout<< "Invalid command passed, correct usage : " ;
+            std::cout<< "Usage: ./opendap-llmtool describe <URL>`" ;
+            std::cout<< "./opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr ";
+            std::cout<< "./opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr";
+
         }
     }
     else
     {
-        std::cout<< "No command passed" ;
+        // Add usage instructions
+        std::cout<< "Usage: ./opendap-llmtool describe <URL>`" ;
+        std::cout<< "./opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr ";
+        std::cout<< "./opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr";
     }
 
     /* function to test XML, how does it print */

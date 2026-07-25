@@ -1,5 +1,6 @@
 #include "describeCmd.h"
 
+/* find the size of dimension*/
 int findDimensionSize(const std::vector<Dimension>& dimensions, const std::string& dimName)
 {
     for (const auto& dim : dimensions)
@@ -11,6 +12,7 @@ int findDimensionSize(const std::vector<Dimension>& dimensions, const std::strin
     }
     return -1; // Return -1 if dimension not found
 }
+/* build Dimensions attributes and values string */
 std::string buildDMRString(const Variable& var, const std::vector<Dimension>& dimensions)
 {
     std::string dmrString = "[";
