@@ -7,7 +7,9 @@ This repository contains a client side tool, opendap_llmtool, that quries databa
 '''
 ./opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr    
 '''
+
 results in
+
 '''
     Variable name: COADSX, type: Float64, units: degrees_east, long_name: , size: 180
     Variable name: COADSY, type: Float64, units: degrees_north, long_name: , size: 90
@@ -19,10 +21,13 @@ results in
 '''
 
 Another example with differently structured schema:
+
 '''
 ./opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr
 '''
+
 results in
+
 '''
     Command passed =describe, DEBUG url = https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr
     status: 200
@@ -43,7 +48,8 @@ results in
     - Z_sfc (Geopotential height, gpm, gp m) — shape [record=1,y=95,x=135]
 
     - valtime (valid time, hours since 1992-1-1) — shape [record=1]
-'''
+
     - x (synthesized X coord, km) — shape [x=135]
 
     - y (synthesized Y coord, km) — shape [y=95]
+'''
