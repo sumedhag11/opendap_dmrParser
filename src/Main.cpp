@@ -19,7 +19,7 @@ int main (int argc, char* argv[])
         //for finding labels
         if (command == "describe")
         {
-            std::cout<< "Command passed =" <<command ;
+            //std::cout<< "Command passed =" <<command ;
             if( argc >2)
             {
                 int status = buildCompleteDMRString(argv[2]);
@@ -45,13 +45,25 @@ int main (int argc, char* argv[])
             }
             std::cout<< "Command passed1 =" <<command ;
         }
+        else if (command == "--help" || command == "-h")
+        {
+            std::cout << "Usage: opendap-llmtool describe <dmr-url>\n\n"
+                    << "Fetches an OPeNDAP dataset's .dmr metadata and prints a\n"
+                    << "human-readable description of its variables, units, and shapes.\n\n"
+                    << "Examples:\n"
+                    << "  opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr\n"
+                    << "  opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr\n";
+            return 0;
+        }
         else
         {
-            std::cout<< "Invalid command passed, correct usage : " ;
-            std::cout<< "Usage: ./opendap-llmtool describe <URL>`" ;
-            std::cout<< "./opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr ";
-            std::cout<< "./opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr";
-
+           std::cout << "Usage: opendap-llmtool describe <dmr-url>\n\n"
+                    << "Fetches an OPeNDAP dataset's .dmr metadata and prints a\n"
+                    << "human-readable description of its variables, units, and shapes.\n\n"
+                    << "Examples:\n"
+                    << "  opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr\n"
+                    << "  opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr\n";
+            return 0;
         }
     }
     else
