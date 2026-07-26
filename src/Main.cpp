@@ -4,10 +4,10 @@
 /*
 Get DMR parsed data, dimensions, attributes and values using following
 For DMR documents - 
-./opendap-llmtool describe URL
+./opendap_dmrParser describe URL
 e
-./opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr
-./opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr
+./opendap_dmrParser describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr
+./opendap_dmrParser describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr
 */
 int main (int argc, char* argv[]) 
 {
@@ -47,31 +47,31 @@ int main (int argc, char* argv[])
         }
         else if (command == "--help" || command == "-h")
         {
-            std::cout << "Usage: opendap-llmtool describe <dmr-url>\n\n"
+            std::cout << "Usage: opendap_dmrParser describe <dmr-url>\n\n"
                     << "Fetches an OPeNDAP dataset's .dmr metadata and prints a\n"
                     << "human-readable description of its variables, units, and shapes.\n\n"
                     << "Examples:\n"
-                    << "  opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr\n"
-                    << "  opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr\n";
+                    << "  opendap_dmrParser describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr\n"
+                    << "  opendap_dmrParser describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr\n";
             return 0;
         }
         else
         {
-           std::cout << "Usage: opendap-llmtool describe <dmr-url>\n\n"
+           std::cout << "Usage: opendap_dmrParser describe <dmr-url>\n\n"
                     << "Fetches an OPeNDAP dataset's .dmr metadata and prints a\n"
                     << "human-readable description of its variables, units, and shapes.\n\n"
                     << "Examples:\n"
-                    << "  opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr\n"
-                    << "  opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr\n";
+                    << "  opendap_dmrParser describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr\n"
+                    << "  opendap_dmrParser describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr\n";
             return 0;
         }
     }
     else
     {
         // Add usage instructions
-        std::cout<< "Usage: ./opendap-llmtool describe <URL>`" ;
-        std::cout<< "./opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr ";
-        std::cout<< "./opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr";
+        std::cout<< "Usage: ./opendap_dmrParser describe <URL>`" ;
+        std::cout<< "./opendap_dmrParser describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr ";
+        std::cout<< "./opendap_dmrParser describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr";
     }
 
     /* function to test XML, how does it print */

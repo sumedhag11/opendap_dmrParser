@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
-project(opendap-llmtool CXX)
+project(opendap_dmrParser CXX)
 
-add_executable(opendap-llmtool
+add_executable(opendap_dmrParser
     src/main.cpp
     src/HttpClient.cpp
     src/dmrParser.cpp
@@ -9,7 +9,7 @@ add_executable(opendap-llmtool
 )
 
 find_package(CURL REQUIRED)
-target_link_libraries(opendap-llmtool PRIVATE CURL::libcurl)
+target_link_libraries(opendap_dmrParser PRIVATE CURL::libcurl)
 
 find_package(pugixml REQUIRED)
-target_link_libraries(opendap-llmtool PRIVATE pugixml::pugixml)
+target_link_libraries(opendap_dmrParser PRIVATE pugixml::pugixml)

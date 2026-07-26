@@ -32,8 +32,8 @@ std::string getValueFromNode(pugi::xml_node node)
     }
     return val;
 }
-//./opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr    
-//./opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr
+//./opendap_dmrParser describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr    
+//./opendap_dmrParser describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr
 /* parse variables and their attributes from the dmr document
 <Float64 name="COADSX">
         <Dim name="/COADSX"/>
