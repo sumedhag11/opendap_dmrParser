@@ -5,9 +5,6 @@ a.out
 *.o
 *.obj
 
-# Compiled binaries (no extension)
-HelloWorld
-
 # Editor settings
 .vscode/
 

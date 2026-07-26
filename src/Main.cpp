@@ -29,7 +29,7 @@ int main (int argc, char* argv[])
                 std::cout<< "no url" ;
             }
         }
-        else if(command == "query") //for findiing data
+        else if(command == "query") //for findiing data, read .ascii files
         {
             if (argc >3)
             {
