@@ -4,13 +4,13 @@ This repository contains a client side tool, opendap_llmtool, that quries databa
 
 ### Sample usage
 
-'''
+```
 ./opendap-llmtool describe http://test.opendap.org/opendap/data/nc/coads_climatology.nc.dmr    
-'''
+```
 
 results in
 
-'''
+```
     Variable name: COADSX, type: Float64, units: degrees_east, long_name: , size: 180
     Variable name: COADSY, type: Float64, units: degrees_north, long_name: , size: 90
     Variable name: TIME, type: Float64, units: hour since 0000-01-01 00:00:00, long_name: , size: 12
@@ -18,17 +18,17 @@ results in
     Variable name: AIRT, type: Float32, units: DEG C, long_name: AIR TEMPERATURE, size: -1
     Variable name: UWND, type: Float32, units: M/S, long_name: ZONAL WIND, size: -1
     Variable name: VWND, type: Float32, units: M/S, long_name: MERIDIONAL WIND, size: -1
-'''
+```
 
 Another example with differently structured schema:
 
-'''
+```
 ./opendap-llmtool describe https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr
-'''
+```
 
 results in
 
-'''
+```
     Command passed =describe, DEBUG url = https://thredds-test.unidata.ucar.edu/thredds/dap4/testdods/testData.nc.dmr
     status: 200
     - reftime (reference time, hours since 1992-1-1) — shape [record=1]
@@ -52,4 +52,4 @@ results in
     - x (synthesized X coord, km) — shape [x=135]
 
     - y (synthesized Y coord, km) — shape [y=95]
-'''
+```
