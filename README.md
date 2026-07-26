@@ -1,6 +1,6 @@
 # opendap_llmtool
 
-This repository contains a client side tool, opendap_llmtool, that quries databases accessible via OPeNDAP, reads the .dmr file (label file) for a given dataset, parses it, and displays the database schema in a human readable manner.
+This repository contains a client side tool, opendap_llmtool, that quries databases accessible via OPeNDAP. It reads the .dmr file (label file) for a given dataset, parses it, and displays the database schema in a human readable manner.
 
 ### Sample usage
 
